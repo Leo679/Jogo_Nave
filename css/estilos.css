@@ -1,0 +1,292 @@
+@font-face {
+	font-family:Titulo;
+	src:url(../fontes/ANODETONOONE.TTF);
+}
+
+h1 {
+	font-family:Titulo;
+	font-size:40px;
+	color:#603A03;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image:url(../imgs/fundo.jpg);
+	width:100%;
+}
+
+#container{
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height:auto;
+	position:fixed;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#fundoGame {
+	margin: 0;
+	padding: 0;
+	width:100vw;
+	height:630px;
+	background-image:url(../imgs/fundo_game.jpg);
+	border-color:#FFF;
+	border-style:solid;
+}
+
+#jogador {
+	width:202px;
+	height:90px;
+	position:absolute;
+	left:8px;
+	top:179px;
+background-image:url(../imgs/apache.png);
+
+}
+
+#inimigo1 {
+	width: 256px;
+	height: 66px;
+	position: absolute;
+	left: 100%;
+	top: 253px;
+	background-image:url(../imgs/inimigo1.png);
+	
+}
+
+#inimigo2 {
+	width: 165px;
+	height: 70px;
+	position: absolute;
+	left:100%;
+	top: 447px;
+	background-image: url(../imgs/inimigo2.png);
+}
+
+#amigo {
+	width: 40px;
+	height: 51px;
+	position: absolute;
+	left: 10px;
+	top: 464px;
+	background-image:url(../imgs/amigo.png);
+}
+
+#inicio {
+	width:450px;
+	height:250px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:150px;
+	text-align:center;
+	padding:1px;
+
+}
+
+.anima1 {
+	background-image:url(../imgs/apache.png);
+	animation:play .5s steps(1) infinite;
+
+	-webkit-animation: play .5s steps(1) infinite; /*google chorme*/
+	-moz-animation: play .5s steps(1) infinite; 
+	-ms-animation: play .5s steps(1) infinite;
+	-o-animation: play .5s steps(1) infinite;
+      
+}
+
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position:-512px;}
+}
+
+@-webkit-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+ }
+ 
+ @-moz-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+ }
+ 
+ @-ms-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+ }
+ 
+ @-o-keyframes play {
+	from { background-position:0px; }
+	  to { background-position: -512px; }
+ }
+
+ .anima2 {
+    background-image:url(../imgs/inimigo1.png);
+    animation: play .5s steps(2) infinite;
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite; 
+}
+
+.anima3 {
+	background-image:url(../imgs/amigo.png);
+	animation:play2 .9s steps(5) infinite;
+	-webkit-animation: play2 .9s steps(5) infinite;
+       -moz-animation: play2 .9s steps(5) infinite;
+        -ms-animation: play2 .9s steps(5) infinite;
+         -o-animation: play2 .9s steps(5) infinite;
+}
+
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position:-196px;}
+}
+
+@-webkit-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -196px; }
+}
+
+@-moz-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -196px; }
+}
+
+@-ms-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -196px; }
+}
+
+@-o-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -196px; }
+}
+
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../imgs/disparo.png);
+}
+
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+.anima4 {
+	width:44px;
+	height:51px;
+	background-image:url(../imgs/amigo_morte.png);
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+       -moz-animation: play3 .5s steps(7) infinite;
+        -ms-animation: play3 .5s steps(7) infinite;
+         -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+}
+
+h2 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#FFF
+}
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 80%;
+	top: 7px;	
+}
+
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#603A03;
+
+}
+
+#fim {
+	width:450px;
+	height:250px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+
+}
+
+footer{
+	background-image: url("../imgs/footer.jpg");
+	font-family:cursive;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: rgb(0, 0, 0);
+
+}
+
+a{
+	text-decoration: none;
+	color: red;
+}
+
+a:hover{
+text-decoration: none;
+color: rgb(68, 0, 255);
+}
